@@ -9,7 +9,7 @@ android {
     buildToolsVersion rootProject.buildToolVersion
 
     defaultConfig {
-        applicationId "id.radhika.app"
+        applicationId "id.kudzoza.app"
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
         versionCode 1

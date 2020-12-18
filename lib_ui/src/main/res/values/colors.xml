@@ -4,23 +4,17 @@
     <color name="colorLibPrimaryDark">#5189C9</color>
     <color name="colorLibAccent">#5AA6FE</color>
 
+    <color name="accentPrimary">#0275D8</color>
+    <color name="accentSuccess">#5CB85C</color>
+    <color name="accentInfo">#5BC0DE</color>
+    <color name="accentWarning">#F0AD4E</color>
+    <color name="accentDanger">#D9534F</color>
+    <color name="accentDark">#292B2C</color>
+    <color name="accentLight">#F7F7F7</color>
+
     <color name="colorWhite">#FFF</color>
     <color name="colorBlack">#000</color>
     <color name="colorWhiteSmoke">#E6E6E6</color>
     <color name="colorGray">#C7C7C7</color>
-    <color name="colorRed">#FF0101</color>
-    <color name="colorBlueOcean">#00EAFF</color>
-    <color name="colorIndigo">#0048FF</color>
-    <color name="colorGreenGrass">#8CC63F</color>
-    <color name="colorRootBackground">#F8F8F8</color>
-    <color name="colorRootSecondaryBackground">#EEEEEE</color>
-    <color name="colorRootThirdBackground">#FAFAFA</color>
-    <color name="colorWarmOrange">#FF9800</color>
-
-    <color name="colorTextPromotion">#595959</color>
-    <color name="colorTextCardMenu">#696969</color>
-    <color name="colorTextPrimary">#505050</color>
-    <color name="colorTitleBanner">#757575</color>
-    <color name="colorTextSecondary">#999999</color>
     <color name="darkGray">#C4C4C4</color>
 </resources>
