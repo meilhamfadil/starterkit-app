@@ -40,8 +40,10 @@ android {
 }
 
 dependencies {
-    implementation project(path: ':lib_mvvm')
-    implementation project(path: ':feature_dummy')
+    implementation project(path: ':lib')
+    implementation project(path: ':lib_module')
+    implementation project(path: ':feature_onboard')
+    implementation project(path: ':feature_home')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
 
     // Architecture Components

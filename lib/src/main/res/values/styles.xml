@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="NoActionBarAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorLibPrimary</item>
+        <item name="colorPrimaryDark">@color/colorLibPrimaryDark</item>
+        <item name="colorAccent">@color/colorLibAccent</item>
+    </style>
+
+    <style name="ClickableContent">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="PrimaryButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/background_primary_button_layer</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="WrapPrimaryButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/background_primary_button_layer</item>
+        <item name="android:textColor">@color/colorLibPrimary</item>
+        <item name="android:paddingLeft">@dimen/dimens_16dp</item>
+        <item name="android:paddingRight">@dimen/dimens_16dp</item>
+        <item name="android:paddingTop">@dimen/dimens_8dp</item>
+        <item name="android:paddingBottom">@dimen/dimens_8dp</item>
+        <item name="android:textSize">@dimen/size_18sp</item>
+    </style>
+
+    <style name="SecondaryButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/background_secondary_button_layer</item>
+        <item name="android:textColor">@color/colorLibPrimary</item>
+    </style>
+
+    <style name="WrapSecondaryButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/background_secondary_button</item>
+        <item name="android:textColor">@color/colorLibPrimary</item>
+        <item name="android:paddingLeft">@dimen/dimens_16dp</item>
+        <item name="android:paddingRight">@dimen/dimens_16dp</item>
+        <item name="android:paddingTop">@dimen/dimens_8dp</item>
+        <item name="android:paddingBottom">@dimen/dimens_8dp</item>
+        <item name="android:textSize">@dimen/size_18sp</item>
+    </style>
+
+    <style name="ProgressMain" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateTint">@color/colorWhite</item>
+    </style>
+
+</resources>

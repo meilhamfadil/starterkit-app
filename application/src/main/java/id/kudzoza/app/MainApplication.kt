@@ -1,14 +1,35 @@
 package id.kudzoza.app
 
-import android.app.Application
+import id.kudzoza.feature.dummy.screen.onboard.OnBoardActivity
+import id.kudzoza.feature.home.screen.home.HomeActivity
+import id.kudzoza.lib.AppModule
+import id.kudzoza.lib.module.HomeModule
+import id.kudzoza.lib.module.OnBoardModule
+import id.kudzoza.lib.mvvm.BaseApplication
+import id.kudzoza.lib.mvvm.BaseModule
 
 /**
- * Created by Radhika Yusuf Alifiansyah
- * on 05/Apr/2020
+ * Created by Kudzoza
+ * on 19/Dec/2020
  **/
-class MainApplication : Application() {
+class MainApplication : BaseApplication() {
+
+    override fun appendModule() = listOf(
+        HomeModule.get(),
+        OnBoardModule.get()
+    )
 
     override fun onCreate() {
         super.onCreate()
+
+        HomeModule.get().apply {
+            open = { HomeActivity::class.java }
+        }
+
+        OnBoardModule.get().apply {
+            open = { OnBoardActivity::class.java }
+        }
     }
+
+
 }

@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import id.kudzoza.feature.dummy.screen.onboard.OnBoardActivity
+import id.kudzoza.lib.module.OnBoardModule
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         job = GlobalScope.launch {
             delay(800)
-            startActivity(Intent(this@MainActivity, OnBoardActivity::class.java))
+            startActivity(Intent(this@MainActivity, OnBoardModule.get().open.invoke()))
             finish()
         }
     }

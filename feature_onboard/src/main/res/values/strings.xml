@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="label_inc_source">Add Resource</string>
+    <string name="label_inc_done">Add Done</string>
+    <string name="label_double">%1$s from %2$s learn to swim</string>
+    <string name="label_go_home">Go to Home</string>
+</resources>

@@ -1,0 +1,16 @@
+package id.kudzoza.lib.mvvm.data
+
+/**
+ * Created by Radhika Yusuf Alifiansyah
+ * on 08/Jun/2020
+ **/
+
+object StringConst {
+    const val VALID_EMAIL_ADDRESS_REGEX =
+        "[a-z0-9!#\$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#\$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+    const val VALID_USERNAME_REGEX = "^(?!.*\\.\\.)(?!.*\\.\$)[^\\W][\\w.]{0,29}\$"
+    const val VALID_PASSWORD_REGEX = "^(?=.*[a-z])(?=.*[a-zA-Z]).{8,}\$"
+    const val KEY_TOKEN = "key_user_token_$"
+    const val KEY_USER_DATA = "key_user_data$"
+    const val KEY_ON_BOARDING = "key_app_on_board$"
+}

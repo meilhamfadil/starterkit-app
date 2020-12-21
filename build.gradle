@@ -8,7 +8,7 @@ buildscript {
     repositories {
         google()
         jcenter()
-        
+
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.6.1'
@@ -23,7 +23,7 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
+
     }
 }
 
@@ -36,6 +36,8 @@ ext {
     targetSdkVersion = 28
     compileSdkVersion = 28
     buildToolVersion = "29.0.3"
+    versionCode = 1
+    versionName = "1.0.0"
 
     androidKTXVersion = '1.2.0'
     androidXVersion = '1.0.0'
@@ -68,4 +70,5 @@ ext {
     retrofitVersion = "2.6.0"
     loggingInterceptorVersion = "3.8.0"
     okhttpVersion = "3.9.0"
+    buildToolsVersion = buildToolVersion
 }
