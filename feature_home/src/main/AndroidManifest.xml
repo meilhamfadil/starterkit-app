@@ -4,6 +4,7 @@
 
     <application>
         <activity
+            android:theme="@style/NoActionBarAppTheme"
             android:name=".screen.home.HomeActivity"
             android:screenOrientation="portrait" />
     </application>

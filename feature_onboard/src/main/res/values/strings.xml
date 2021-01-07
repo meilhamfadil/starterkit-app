@@ -4,4 +4,6 @@
     <string name="label_inc_done">Add Done</string>
     <string name="label_double">%1$s from %2$s learn to swim</string>
     <string name="label_go_home">Go to Home</string>
+    <string name="label_null_visibility">Icon will show if data not null</string>
+    <string name="label_toggle_nullable">Toggle Null</string>
 </resources>

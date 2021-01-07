@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleOwner
@@ -14,7 +15,6 @@ import id.kudzoza.lib.mvvm.contract.ScreenContract
 import id.kudzoza.lib.mvvm.util.showToast
 import kotlinx.coroutines.*
 import kotlin.coroutines.CoroutineContext
-import kotlin.reflect.KMutableProperty1
 import kotlin.reflect.KProperty1
 
 /**
@@ -36,7 +36,9 @@ abstract class BaseActivity<B : ViewBinding, VM : BaseVM>(
     @OnLifecycleEvent(Lifecycle.Event.ON_PAUSE)
     fun destroy() = coroutineContext.cancelChildren()
 
-    val binding by lazy { viewBinder.invoke(LayoutInflater.from(applicationContext)) }
+    val binding by lazy {
+        viewBinder.invoke(layoutInflater)
+    }
     val vm: VM by lazy {
         ViewModelProvider(viewModelStore, defaultViewModelProviderFactory).get(getViewModel())
     }

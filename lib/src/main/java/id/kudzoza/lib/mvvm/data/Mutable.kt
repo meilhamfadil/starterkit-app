@@ -13,7 +13,7 @@ class Mutable<T>(private val defValue: T) : LiveData<T>() {
         get() = value ?: defValue
         set(param) {
             field = param
-            postValue(param!!)
+            postValue(param)
         }
 
 }

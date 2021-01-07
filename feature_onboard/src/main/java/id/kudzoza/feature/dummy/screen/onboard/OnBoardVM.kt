@@ -12,9 +12,14 @@ class OnBoardVM : BaseVM() {
 
     val source = Mutable(0)
     val done = Mutable(0)
+    val nullable = Mutable<String?>(null)
 
     override suspend fun onCreate() {
 
+    }
+
+    fun toggleNullable() {
+        nullable.content = if (nullable.content == null) "NOT NULL" else null
     }
 
     fun incResource() = launch {

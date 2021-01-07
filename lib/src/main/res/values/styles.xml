@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="NoActionBarAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="NoActionBarAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorLibPrimary</item>
         <item name="colorPrimaryDark">@color/colorLibPrimaryDark</item>
@@ -18,6 +18,10 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/background_primary_button_layer</item>
+        <item name="android:paddingLeft">@dimen/dimens_8dp</item>
+        <item name="android:paddingRight">@dimen/dimens_8dp</item>
+        <item name="android:paddingTop">@dimen/dimens_4dp</item>
+        <item name="android:paddingBottom">@dimen/dimens_4dp</item>
         <item name="android:textColor">@color/colorWhite</item>
     </style>
 
@@ -26,10 +30,10 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/background_primary_button_layer</item>
         <item name="android:textColor">@color/colorLibPrimary</item>
-        <item name="android:paddingLeft">@dimen/dimens_16dp</item>
-        <item name="android:paddingRight">@dimen/dimens_16dp</item>
-        <item name="android:paddingTop">@dimen/dimens_8dp</item>
-        <item name="android:paddingBottom">@dimen/dimens_8dp</item>
+        <item name="android:paddingLeft">@dimen/dimens_8dp</item>
+        <item name="android:paddingRight">@dimen/dimens_8dp</item>
+        <item name="android:paddingTop">@dimen/dimens_4dp</item>
+        <item name="android:paddingBottom">@dimen/dimens_4dp</item>
         <item name="android:textSize">@dimen/size_18sp</item>
     </style>
 
@@ -37,6 +41,10 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/background_secondary_button_layer</item>
+        <item name="android:paddingLeft">@dimen/dimens_8dp</item>
+        <item name="android:paddingRight">@dimen/dimens_8dp</item>
+        <item name="android:paddingTop">@dimen/dimens_4dp</item>
+        <item name="android:paddingBottom">@dimen/dimens_4dp</item>
         <item name="android:textColor">@color/colorLibPrimary</item>
     </style>
 
@@ -45,10 +53,10 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/background_secondary_button</item>
         <item name="android:textColor">@color/colorLibPrimary</item>
-        <item name="android:paddingLeft">@dimen/dimens_16dp</item>
-        <item name="android:paddingRight">@dimen/dimens_16dp</item>
-        <item name="android:paddingTop">@dimen/dimens_8dp</item>
-        <item name="android:paddingBottom">@dimen/dimens_8dp</item>
+        <item name="android:paddingLeft">@dimen/dimens_8dp</item>
+        <item name="android:paddingRight">@dimen/dimens_8dp</item>
+        <item name="android:paddingTop">@dimen/dimens_4dp</item>
+        <item name="android:paddingBottom">@dimen/dimens_4dp</item>
         <item name="android:textSize">@dimen/size_18sp</item>
     </style>
 

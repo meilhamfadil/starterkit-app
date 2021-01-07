@@ -1,10 +1,14 @@
 package id.kudzoza.feature.dummy.screen.onboard
 
+import android.view.LayoutInflater
+import android.view.View
 import androidx.lifecycle.MediatorLiveData
 import id.kudzoza.feature.dummy.R
 import id.kudzoza.feature.dummy.databinding.ActivityOnboardBinding
 import id.kudzoza.lib.module.HomeModule
 import id.kudzoza.lib.mvvm.BaseActivity
+import id.kudzoza.lib.mvvm.util.notNullIsVisible
+import id.kudzoza.lib.mvvm.util.nullIsVisible
 import id.kudzoza.lib.mvvm.util.watch
 
 /**
@@ -21,8 +25,11 @@ class OnBoardActivity : BaseActivity<ActivityOnboardBinding, OnBoardVM>(
     }
 
     override fun onViewReady() {
+        binding.toggleNullable.setOnClickListener { vm.toggleNullable() }
+
         binding.addResource.setOnClickListener { vm.incResource() }
         binding.addDone.setOnClickListener { vm.incDone() }
+
         binding.goHome.setOnClickListener {
             openModule(
                 HomeModule.get(),
@@ -42,6 +49,11 @@ class OnBoardActivity : BaseActivity<ActivityOnboardBinding, OnBoardVM>(
                 it.done.toString(),
                 it.source.toString()
             )
+        }
+
+        watch(vm.nullable){
+            binding.accessibleIcon.visibility = it.notNullIsVisible()
+            binding.notAccessibleIcon.visibility = it.nullIsVisible()
         }
     }
 
