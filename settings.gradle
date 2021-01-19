@@ -1,7 +1,7 @@
 include ':lib_module'
 include ':lib_module'
 include ':feature_home'
-rootProject.name='PQM-LMS'
+rootProject.name='starter'
 include ':application'
 include ':lib'
 include ':feature_onboard'

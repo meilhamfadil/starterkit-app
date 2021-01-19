@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorLibPrimary">#5AA6FE</color>
-    <color name="colorLibPrimaryDark">#5189C9</color>
-    <color name="colorLibAccent">#5AA6FE</color>
+    <color name="colorPrimary">#0D93DA</color>
+    <color name="colorDarkPrimary">#096597</color>
+    <color name="colorSecondary">#FAA515</color>
+    <color name="colorDarkSecondary">#BA7A0C</color>
 
     <color name="accentPrimary">#0275D8</color>
     <color name="accentSuccess">#5CB85C</color>
@@ -12,9 +13,9 @@
     <color name="accentDark">#292B2C</color>
     <color name="accentLight">#F7F7F7</color>
 
-    <color name="colorWhite">#FFF</color>
-    <color name="colorBlack">#000</color>
-    <color name="colorWhiteSmoke">#E6E6E6</color>
-    <color name="colorGray">#C7C7C7</color>
-    <color name="darkGray">#C4C4C4</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhiteSmoke">#efefef</color>
+    <color name="colorGray">#888888</color>
+    <color name="colorDark">#373737</color>
+    <color name="colorBlack">#000000</color>
 </resources>

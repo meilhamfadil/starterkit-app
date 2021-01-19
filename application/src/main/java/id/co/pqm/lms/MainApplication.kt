@@ -1,10 +1,11 @@
 package id.co.pqm.lms
 
-import id.co.feature.dummy.screen.onboard.OnBoardActivity
-import id.co.feature.home.screen.home.HomeActivity
-import id.co.lib.module.HomeModule
-import id.co.lib.module.OnBoardModule
-import id.co.lib.mvvm.BaseApplication
+import id.co.pqm.feature.onboard.screen.onboard.OnBoardActivity
+import id.co.pqm.feature.home.screen.home.HomeActivity
+import id.co.pqm.lib.module.HomeModule
+import id.co.pqm.lib.module.OnBoardModule
+import id.co.pqm.lib.mvvm.BaseApplication
+import id.co.pqm.lib.mvvm.BaseModule
 
 /**
  * Created by Kudzoza
@@ -12,13 +13,17 @@ import id.co.lib.mvvm.BaseApplication
  **/
 class MainApplication : BaseApplication() {
 
-    override fun appendModule() = listOf(
-        HomeModule.get(),
-        OnBoardModule.get()
-    )
+    override val listModule: List<BaseModule>
+        get() = listOf(
+            HomeModule.get(),
+            OnBoardModule.get()
+        )
 
     override fun onCreate() {
         super.onCreate()
+        listModule.apply {
+            forEach { it.baseUrlCaptor = { BuildConfig.BASE_URL } }
+        }
 
         HomeModule.get().apply {
             open = { HomeActivity::class.java }

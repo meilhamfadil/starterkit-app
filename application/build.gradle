@@ -9,11 +9,11 @@ android {
     buildToolsVersion rootProject.buildToolVersion
 
     defaultConfig {
-        applicationId "id.kudzoza.app"
+        applicationId "id.co.pqm.lms"
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        versionCode rootProject.versionCode
+        versionName rootProject.versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -22,6 +22,9 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        buildTypes.each {
+            it.buildConfigField 'String', 'BASE_URL', '"https://meilhamfadil.github.io/"'
         }
     }
 

@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <solid
-        android:color="@color/accentLight"/>
-
-    <corners
-        android:radius="@dimen/dimens_8dp"/>
-</shape>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/colorWhite">
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="@color/colorGray" />
+            <corners android:radius="@dimen/dimens_8dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/colorSecondary" />
+            <corners android:radius="@dimen/dimens_8dp" />
+        </shape>
+    </item>
+</ripple>
