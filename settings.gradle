@@ -1,7 +1,7 @@
 include ':lib_module'
 include ':lib_module'
 include ':feature_home'
-rootProject.name='starterkit-app'
+rootProject.name='PQM-LMS'
 include ':application'
 include ':lib'
 include ':feature_onboard'

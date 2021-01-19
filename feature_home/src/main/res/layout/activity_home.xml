@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        class="id.kudzoza.feature.home.screen.home.HomeFragment"
+        class="id.co.feature.home.screen.home.HomeFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

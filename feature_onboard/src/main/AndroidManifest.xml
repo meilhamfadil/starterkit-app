@@ -1,9 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="id.kudzoza.feature.dummy">
+    package="id.co.feature.dummy">
 
     <application>
         <activity
-            android:name=".screen.onboard.OnBoardActivity"
+            android:name="id.co.feature.dummy.screen.onboard.OnBoardActivity"
             android:screenOrientation="portrait" />
     </application>
 
