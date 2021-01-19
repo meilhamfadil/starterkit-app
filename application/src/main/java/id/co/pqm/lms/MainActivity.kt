@@ -1,5 +1,7 @@
 package id.co.pqm.lms
 
+import id.co.chpn.feature.auth.screen.login.LoginActivity
+import id.co.pqm.lib.module.AuthModule
 import id.co.pqm.lib.module.HomeModule
 import id.co.pqm.lib.module.OnBoardModule
 import id.co.pqm.lib.mvvm.BaseActivity
@@ -25,8 +27,8 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainVM>(
                 )
             else if (it == 2)
                 openFreshModule(
-                    HomeModule.get(),
-                    HomeModule::open
+                    AuthModule.get(),
+                    AuthModule::open
                 )
         }
     }

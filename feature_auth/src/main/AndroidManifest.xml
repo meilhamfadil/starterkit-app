@@ -1,10 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="id.co.pqm.feature.onboard">
+    package="id.co.chpn.feature">
 
     <application android:theme="@style/NoActionBarAppTheme">
         <activity
-            android:name="id.co.pqm.feature.onboard.screen.onboard.OnBoardActivity"
+            android:name=".auth.screen.login.LoginActivity"
             android:screenOrientation="portrait" />
     </application>
-
 </manifest>

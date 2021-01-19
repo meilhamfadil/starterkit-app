@@ -3,10 +3,10 @@ package id.co.pqm.lib.mvvm
 import android.app.Application
 import com.google.gson.Gson
 import id.co.pqm.lib.data.model.UserProfileModel
-import id.co.pqm.lib.mvvm.data.StringConst.DATABASE_NAME
-import id.co.pqm.lib.mvvm.data.StringConst.KEY_ON_BOARDING
-import id.co.pqm.lib.mvvm.data.StringConst.KEY_TOKEN
-import id.co.pqm.lib.mvvm.data.StringConst.KEY_USER_DATA
+import id.co.pqm.lib.data.model.StringConst.DATABASE_NAME
+import id.co.pqm.lib.data.model.StringConst.KEY_ON_BOARDING
+import id.co.pqm.lib.data.model.StringConst.KEY_TOKEN
+import id.co.pqm.lib.data.model.StringConst.KEY_USER_DATA
 
 /**
  * Created by Radhika Yusuf Alifiansyah

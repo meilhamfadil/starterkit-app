@@ -2,9 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="id.co.pqm.feature.home">
 
-    <application>
+    <application android:theme="@style/NoActionBarAppTheme">
         <activity
-            android:theme="@style/NoActionBarAppTheme"
             android:name="id.co.pqm.feature.home.screen.home.HomeActivity"
             android:screenOrientation="portrait" />
     </application>

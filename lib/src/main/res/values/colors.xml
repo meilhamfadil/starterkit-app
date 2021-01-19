@@ -15,6 +15,7 @@
 
     <color name="colorWhite">#ffffff</color>
     <color name="colorWhiteSmoke">#efefef</color>
+    <color name="colorLightGray">#dddddd</color>
     <color name="colorGray">#888888</color>
     <color name="colorDark">#373737</color>
     <color name="colorBlack">#000000</color>

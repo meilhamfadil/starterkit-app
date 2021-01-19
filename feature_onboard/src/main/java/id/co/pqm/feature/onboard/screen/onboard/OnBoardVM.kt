@@ -3,7 +3,7 @@ package id.co.pqm.feature.onboard.screen.onboard
 import id.co.pqm.feature.onboard.data.usecases.OnBoardUseCase
 import id.co.pqm.feature.onboard.data.usecases.OnBoardUseCaseImpl
 import id.co.pqm.lib.mvvm.BaseVM
-import id.co.pqm.lib.mvvm.data.Mutable
+import id.co.pqm.lib.data.model.Mutable
 
 /**
  * Created by Kudzoza

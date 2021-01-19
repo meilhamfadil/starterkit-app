@@ -3,7 +3,7 @@ package id.co.pqm.feature.home.screen.home
 import id.co.pqm.feature.home.data.usecase.HomeUseCase
 import id.co.pqm.feature.home.data.usecase.HomeUseCaseImpl
 import id.co.pqm.lib.mvvm.BaseVM
-import id.co.pqm.lib.mvvm.data.Mutable
+import id.co.pqm.lib.data.model.Mutable
 import kotlinx.coroutines.delay
 
 /**

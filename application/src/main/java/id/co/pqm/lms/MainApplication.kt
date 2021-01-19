@@ -1,7 +1,9 @@
 package id.co.pqm.lms
 
+import id.co.chpn.feature.auth.screen.login.LoginActivity
 import id.co.pqm.feature.onboard.screen.onboard.OnBoardActivity
 import id.co.pqm.feature.home.screen.home.HomeActivity
+import id.co.pqm.lib.module.AuthModule
 import id.co.pqm.lib.module.HomeModule
 import id.co.pqm.lib.module.OnBoardModule
 import id.co.pqm.lib.mvvm.BaseApplication
@@ -15,8 +17,9 @@ class MainApplication : BaseApplication() {
 
     override val listModule: List<BaseModule>
         get() = listOf(
-            HomeModule.get(),
-            OnBoardModule.get()
+            OnBoardModule.get(),
+            AuthModule.get(),
+            HomeModule.get()
         )
 
     override fun onCreate() {
@@ -25,12 +28,16 @@ class MainApplication : BaseApplication() {
             forEach { it.baseUrlCaptor = { BuildConfig.BASE_URL } }
         }
 
-        HomeModule.get().apply {
-            open = { HomeActivity::class.java }
-        }
-
         OnBoardModule.get().apply {
             open = { OnBoardActivity::class.java }
+        }
+
+        AuthModule.get().apply {
+            open = { LoginActivity::class.java }
+        }
+
+        HomeModule.get().apply {
+            open = { HomeActivity::class.java }
         }
     }
 

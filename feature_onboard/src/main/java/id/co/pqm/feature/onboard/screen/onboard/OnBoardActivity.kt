@@ -1,6 +1,7 @@
 package id.co.pqm.feature.onboard.screen.onboard
 
 import id.co.pqm.feature.onboard.databinding.ActivityOnboardBinding
+import id.co.pqm.lib.module.AuthModule
 import id.co.pqm.lib.module.HomeModule
 import id.co.pqm.lib.mvvm.BaseActivity
 import id.co.pqm.lib.mvvm.util.openFreshModule
@@ -23,8 +24,8 @@ class OnBoardActivity : BaseActivity<ActivityOnboardBinding, OnBoardVM>(
     override fun observeLiveData() {
         watch(vm.isOnBoardFinish) {
             openFreshModule(
-                HomeModule.get(),
-                HomeModule::open
+                AuthModule.get(),
+                AuthModule::open
             )
         }
     }

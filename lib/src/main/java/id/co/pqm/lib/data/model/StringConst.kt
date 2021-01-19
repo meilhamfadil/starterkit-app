@@ -1,4 +1,4 @@
-package id.co.pqm.lib.mvvm.data
+package id.co.pqm.lib.data.model
 
 /**
  * Created by Radhika Yusuf Alifiansyah

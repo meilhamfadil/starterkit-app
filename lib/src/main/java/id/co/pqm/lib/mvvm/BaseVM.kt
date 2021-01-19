@@ -2,7 +2,7 @@ package id.co.pqm.lib.mvvm
 
 import androidx.annotation.StringRes
 import androidx.lifecycle.*
-import id.co.pqm.lib.mvvm.data.Mutable
+import id.co.pqm.lib.data.model.Mutable
 import kotlinx.coroutines.*
 import kotlinx.coroutines.launch as fire
 import kotlinx.coroutines.async as await

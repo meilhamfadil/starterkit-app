@@ -12,7 +12,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import id.co.pqm.lib.mvvm.BaseModule
 import id.co.pqm.lib.mvvm.contract.ScreenContract
-import id.co.pqm.lib.mvvm.data.Mutable
+import id.co.pqm.lib.data.model.Mutable
 import kotlin.reflect.KProperty1
 
 /**

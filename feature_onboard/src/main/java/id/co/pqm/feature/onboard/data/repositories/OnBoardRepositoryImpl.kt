@@ -3,7 +3,7 @@ package id.co.pqm.feature.onboard.data.repositories
 import android.content.SharedPreferences
 import id.co.pqm.lib.data.model.Payload
 import id.co.pqm.lib.module.OnBoardModule
-import id.co.pqm.lib.mvvm.data.StringConst.KEY_ON_BOARDING
+import id.co.pqm.lib.data.model.StringConst.KEY_ON_BOARDING
 import java.lang.Exception
 
 /**

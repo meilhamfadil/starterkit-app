@@ -4,7 +4,7 @@ import android.content.Context
 import android.content.Context.MODE_PRIVATE
 import android.content.SharedPreferences
 import id.co.pqm.lib.data.model.UserProfileModel
-import id.co.pqm.lib.mvvm.data.StringConst.DATABASE_NAME
+import id.co.pqm.lib.data.model.StringConst.DATABASE_NAME
 
 /**
  * Created by Radhika Yusuf Alifiansyah
