@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ripple xmlns:android="http://schemas.android.com/apk/res/android"
-    android:color="@color/colorWhite">
-    <item android:state_enabled="false">
-        <shape>
-            <solid android:color="@color/colorGray" />
-            <corners android:radius="@dimen/dimens_8dp" />
-        </shape>
-    </item>
-    <item>
-        <shape>
-            <solid android:color="@color/colorSecondary" />
-            <corners android:radius="@dimen/dimens_8dp" />
-        </shape>
-    </item>
-</ripple>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/secondary_button_disable" android:state_enabled="false" />
+    <item android:drawable="@drawable/secondary_button_pressed" android:state_pressed="true" />
+    <item android:drawable="@drawable/secondary_button" />
+</selector>

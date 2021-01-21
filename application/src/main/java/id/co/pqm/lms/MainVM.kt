@@ -18,7 +18,7 @@ class MainVM(
     val isAppReady = Mutable(0)
 
     override suspend fun onCreate() {
-        delay(1000)
+        delay(2500)
         isAppReady.content = if (onBoardUseCase.isOnBoardAvailable()) 1 else 2
     }
 }

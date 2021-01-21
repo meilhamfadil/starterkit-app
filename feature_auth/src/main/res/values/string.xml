@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="label_login">Login</string>
+    <string name="label_register">Register</string>
 
     <string name="label_username">Username</string>
     <string name="label_password">Password</string>
