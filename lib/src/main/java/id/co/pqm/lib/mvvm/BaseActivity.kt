@@ -11,6 +11,7 @@ import androidx.lifecycle.OnLifecycleEvent
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewbinding.ViewBinding
 import id.co.pqm.lib.mvvm.contract.ScreenContract
+import id.co.pqm.lib.mvvm.util.hideKeyboard
 import id.co.pqm.lib.mvvm.util.showToast
 import kotlinx.coroutines.*
 import kotlin.coroutines.CoroutineContext
@@ -49,6 +50,7 @@ abstract class BaseActivity<B : ViewBinding, VM : BaseVM>(
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         if (!isViewCreated) {
+            binding.root.setOnClickListener { it.hideKeyboard() }
             onViewReady()
             observeLiveData()
             isViewCreated = true

@@ -14,6 +14,7 @@
     <color name="accentLight">#F7F7F7</color>
 
     <color name="colorWhite">#ffffff</color>
+    <color name="colorBackground">#f7f7f7</color>
     <color name="colorWhiteSmoke">#efefef</color>
     <color name="colorLightGray">#dddddd</color>
     <color name="colorGray">#888888</color>

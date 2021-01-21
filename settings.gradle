@@ -1,6 +1,5 @@
 include ':feature_auth'
 include ':lib_module'
-include ':lib_module'
 include ':feature_home'
 rootProject.name='starter'
 include ':application'
